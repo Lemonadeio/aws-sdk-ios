@@ -214,7 +214,6 @@ NSString *const AWSDynamoDBObjectMapperUserAgent = @"mapper";
             id entryAttributeValue = self.M[entryAttributeKey];
             id objectValue = [entryAttributeValue aws_getAttributeValue];
             if (objectValue) {
-//                NSLog(@"Setting key %@ to object %@", entryAttributeKey, entry )
                 [map setObject:objectValue
                         forKey:entryAttributeKey];
             }
