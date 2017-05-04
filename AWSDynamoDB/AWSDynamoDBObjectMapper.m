@@ -212,8 +212,11 @@ NSString *const AWSDynamoDBObjectMapperUserAgent = @"mapper";
         NSMutableDictionary *map = [NSMutableDictionary dictionaryWithCapacity:self.M.count];
         for (NSString *entryAttributeKey in self.M) {
             id entryAttributeValue = self.M[entryAttributeKey];
-            [map setObject:[entryAttributeValue aws_getAttributeValue]
-                    forKey:entryAttributeKey];
+            id objectValue = [entryAttributeValue aws_getAttributeValue];
+            if (objectValue) {
+                [map setObject:objectValue
+                        forKey:entryAttributeKey];
+            }
         }
         return map;
     }
