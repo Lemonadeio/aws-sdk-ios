@@ -25,6 +25,7 @@ if [ -x "Scripts/SdkPackage.sh" ]; then
     Scripts/SdkPackage.sh AWSAutoScaling
     Scripts/SdkPackage.sh AWSCognito
     Scripts/SdkPackage.sh AWSCognitoIdentityProvider
+    Scripts/SdkPackage.sh AWSCognitoAuth
     Scripts/SdkPackage.sh AWSCloudWatch
     Scripts/SdkPackage.sh AWSDeepSense
     Scripts/SdkPackage.sh AWSDynamoDB
@@ -34,6 +35,7 @@ if [ -x "Scripts/SdkPackage.sh" ]; then
     Scripts/SdkPackage.sh AWSKinesis
     Scripts/SdkPackage.sh AWSKMS
     Scripts/SdkPackage.sh AWSLambda
+    Scripts/SdkPackage.sh AWSLogs
     Scripts/SdkPackage.sh AWSMachineLearning
     Scripts/SdkPackage.sh AWSMobileAnalytics
     Scripts/SdkPackage.sh AWSPinpoint
